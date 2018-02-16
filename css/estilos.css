@@ -1,0 +1,286 @@
+/* Estilos Generales */
+/* ================================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+img{
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+}
+/* ================================== */
+
+/* HEADER */
+/* ================================== */
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+
+    background: url('../source/img/headerbg.png');
+    background-position: center;
+    background-repeat: repeat;
+}
+
+header h2{
+    animation: in ;
+    animation-iteration-count: initial;
+    animation-duration: 3s;
+    width: 100%;
+    text-align: left;
+    font-size: 4.6em;
+    font-weight: 300;
+    margin-bottom: 4vh;
+    color: #fff;
+}
+
+header h1{
+    animation: in ;
+    animation-iteration-count: initial;
+    animation-duration: 3s;
+    width: 100%;
+    text-align: right;
+    font-size: 4.6em;
+    font-weight: 700;
+    color: rgb(223, 73, 14);
+}
+
+header figure{
+    margin-top: 17vh; 
+    text-align: center;
+}
+
+header figure img{
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, .1)
+}
+
+header .valor{
+    margin: 5vh;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* ================================== */
+
+/* Main */
+
+main{
+    width: 100%;
+    margin-top: 200px;
+}
+
+/* ===ABOUT ME */
+
+main .about-me{
+    width: 100%;
+    text-align: center;
+    background: rgb(242,242,242);
+    padding: 40px 0;
+    margin-bottom: 200px;
+}
+
+main .about-me article{
+    width: 60%;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+
+main .about-me .media{
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main .about-me .media img{
+    transform: scale(.6);
+    margin: 0px 20px;
+}
+
+
+/* ===characteristics*/
+
+main .characteristics{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .characteristics .character{
+    width: 20%;
+    padding: 30px;
+    text-align: center;
+    background: rgb(235,235,235);
+    transition: all .3s ease;
+}
+
+main .characteristics .character:hover{
+    transform: scale(1.1);
+    background: rgb(216,216,216);
+}
+
+main .characteristics .character .title{
+    font-weight: 700;
+    color: #444;
+    margin: 10px 0;
+}
+
+main .characteristics .character .description{
+    font-weight: 300;
+    font-size: .9em;
+    color: #222;
+}
+main .characteristics .character .description a{
+    color: #222;
+}
+
+/* ===Projects */
+
+main .projects{
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 300px;
+}
+
+main .projects .title{
+    font-size: 3em;
+    color: #444;
+    margin-bottom: 20px;
+}
+main .projects .description{
+    font-weight: 300;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 100px;
+}
+
+main .projects .project-description{
+    width: 100%;
+    padding: 20px;
+    background: rgb(235,235,235);
+    margin-bottom: 50px;
+    text-align: center;
+    color: #444;
+}
+
+    .project-description h2{
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    .project-description p{
+        font-weight: 300;
+    }
+
+    .project-description div{
+        background: #F2784B;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .project-description div p{
+        display: inline-block;
+        margin: 0px 20px;
+    }
+    
+    .project-description div p a{
+        color: #fff;
+    }
+
+
+/* ===Skills  */
+
+main .skills {
+    width: 85%;
+    margin: auto;
+    max-width: 1500px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main .skills .title{
+    width: 100%;
+    font-size: 3em;
+    color: #444;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 100px;    
+}
+
+    .skill{
+        width: 25%;
+        text-align: center;
+        margin: 0 10px ;
+        margin-bottom: 30px;
+        padding: 20px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .skill img{
+        width: 140px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .skill p{
+        width: 100%;
+        font-weight: 700;
+    }
+/* ============================== */
+
+
+/* Footer */
+footer{
+    margin-top: 300px;
+    padding: 30px;
+    background: #222;
+}
+
+footer .contact{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+footer .contact h2 {
+    font-size: 5em;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+footer .contact  p{
+    color: #fff;
+    font-weight: bold;
+}
+
