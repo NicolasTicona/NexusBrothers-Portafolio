@@ -1,17 +1,8 @@
 @media screen and (max-width: 800px){
 
-    header h2{
-        text-align: center; 
-        font-size: 2.3em;
-    }
-
-    header h1{
-        text-align: center;
-        font-size: 2.3em;
-    }
-
-    header figure{
-        margin-top: 14vh;
+    header .title{
+        font-size: 3em;
+        width: 100%;
     }
 
     header .valor{
@@ -41,9 +32,11 @@
 }
 
 @media screen and (max-width: 500px) {
-    header figure {
-        margin-top: 40px;
+   
+    header .title{
+        font-size: 2em;
     }
+
 
     main{
         margin-top: 150px;
@@ -51,19 +44,25 @@
 
     main .about-me{
         background: #fff;
+        margin-bottom: 100px;
     }
 
     main .about-me article{
         width: 90%;
+        font-size: .7em;
+    }
+
+    main .about-me article b{
+        font-size: 1em;
     }
 
     main .about-me .media{
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
     main .about-me .media img{
-        width: 30px;
+        width: 40px;
     }
 
     main .characteristics{
@@ -87,4 +86,7 @@
         width: 100%;
     }
 
+    footer .contact h2{
+        font-size: 2em;
+    }
 }
